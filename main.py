@@ -1,5 +1,6 @@
 from urllib.request import Request, urlopen
 from snapshotBuilder import buildSnapShotFromHtml
+from os import path
 
 # read out the list of necessary sites
 sites = [site.strip() for site in open('sites.config').readlines()]
@@ -12,12 +13,15 @@ for site in sites:
     cachedContent[site] = buildSnapShotFromHtml(response.read(), excludedElementTypes)
 
 for site, cachedSnap in cachedContent.items():
-    with open(f'snapshots/{site[site.rindex("//")+2:site.index(".")]}.snap', mode='w+') as snapshot:
+    filename = f'snapshots/{site[site.rindex("//")+2:site.index(".")]}.snap'
+    with open(filename, mode='r+' if path.exists(filename) else 'w+') as snapshot:
         snapshotContents = snapshot.read()
         if len(snapshotContents) == 0:
-            print(f'New site: {site}')
             snapshot.write(cachedSnap)
+            print(f'New site: {site}')
         else:
             if (cachedSnap != snapshotContents):
-                print(f'Changed site: {site}')
+                snapshot.truncate(0)
+                snapshot.seek(0)
                 snapshot.write(cachedSnap)
+                print(f'Changed site: {site}')
