@@ -1,0 +1,122 @@
+<body>
+ <div class="container">
+ </div>
+ <div class="mighty-block-full-width-body tall colour-magenta">
+  <div class="container">
+   <h1>
+    Jobs.
+   </h1>
+  </div>
+ </div>
+ <div class="mighty-block-full-width-body short">
+  <div class="container">
+   <p>
+    We’re always looking for the best and brightest talent in mobile and F2P game development.
+   </p>
+   <br/>
+   <p>
+    Mighty Games is a great place to work, from the occasional game jam to conspiring together (at every level!) on our next projects, at Mighty Games you are always encouraged to be creative!
+   </p>
+   <br/>
+   <p>
+    Our current job openings will always be listed here,  but if you know  you’re a great match write to jobs at mightygamesgroup dot com and tell us why!
+   </p>
+  </div>
+ </div>
+ <div class="colour-white">
+  <div class="container">
+   <div class="row justify-content-center">
+    <div class="col-md-4 col-10 section-title">
+     <h2>
+      Work at Mighty
+     </h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-12">
+     <p>
+      There are currently no jobs listed.
+     </p>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="container hidden-md-up" id="footer">
+  <div class="row justify-content-center" id="footer-logo-top">
+   <div class="col-md-2">
+    <img alt="Mighty Games Group" src="/images/MG_Icon.svg"/>
+   </div>
+  </div>
+ </div>
+ <div class="container" id="footer">
+  <div class="row justify-content-center no-gutters align-items-center">
+   <div class="col-6 col-md-5">
+    <div class="row justify-content-around no-gutters">
+     <div class="col-md-4">
+      <a href="/about/">
+       About
+      </a>
+     </div>
+     <div class="col-md-4">
+      <a href="/games/">
+       Games
+      </a>
+     </div>
+     <div class="col-md-4">
+      <a href="/services/">
+       Services
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="col-md-2 hidden-sm-down" id="footer-logo-bottom">
+    <a href="/">
+     <img alt="Mighty Games Group" src="/images/MG_Icon.svg"/>
+    </a>
+   </div>
+   <div class="col-6 col-md-5 no-gutters">
+    <div class="row justify-content-around no-gutters">
+     <div class="col-md-4">
+      <a href="/presskit/">
+       Presskit
+      </a>
+     </div>
+     <div class="col-md-4">
+      <a href="/jobs/">
+       Jobs
+      </a>
+     </div>
+     <div class="col-md-4">
+      <a href="/contact/">
+       Contact
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="container">
+  <div class="row justify-content-center" id="footer-social">
+   <div class="col-4 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+    <a href="https://twitter.com/Mighty_Games">
+     <img alt="Follow Mighty on Twitter" class="right" src="/images/Twitter_Logo_White.svg"/>
+    </a>
+   </div>
+   <div class="col-4 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+    <a href="https://www.facebook.com/mightygamesgroup/">
+     <img alt="Follow Mighty on Facebook" class="left" src="/images/Facebook_Logo_White.svg"/>
+    </a>
+   </div>
+   <div class="col-4 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+    <a href="https://www.youtube.com/channel/UC2bfNRhuFF4WyHDNkNC0dSg/">
+     <img alt="Follow Mighty on YouTube" class="left" src="/images/YouTube_light_color_icon.svg"/>
+    </a>
+   </div>
+  </div>
+ </div>
+ <div class="container" id="footer-copyright">
+  <p>
+   © Copyright 2020 Mighty Games
+  </p>
+ </div>
+</body>
