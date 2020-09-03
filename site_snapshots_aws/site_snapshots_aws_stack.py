@@ -3,11 +3,17 @@ from aws_cdk import (
     aws_lambda as lamb,
     core
 )
+import inspect
 
 class SiteSnapshotsAwsStack(core.Stack):
 
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
 
-        # The code that defines your stack goes here
-        bucket = s3.Bucket(self, 'site-snapshots-bucket', bucket_name='site-snapshots-bucket')
+        # create an s3 bucket to store snapshots, if one doesn't already exist
+        s3.Bucket(self, 'site-snapshots-bucket', bucket_name='site-snapshots-bucket')
+
+        # retrieve the s3 bucket
+        bucket = s3.Bucket.from_bucket_name(self, 'BucketByName', 'site-snapshots-bucket')
+
+        
